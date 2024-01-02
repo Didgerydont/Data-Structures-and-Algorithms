@@ -93,6 +93,16 @@ public class Main {
         System.out.println("\nFind Node at Index 2 : " + myLinkedList.get(1).value + "\n");
         myLinkedList.printList();
 
+        // set
+        System.out.println("\n***********");
+        System.out.println("set used to edit the Node at a given index. It takes two arguments, the first is index, the second is value");
+
+        System.out.println("\nLinked List as it stands currently:");
+        myLinkedList.printList();
+        System.out.println("Set the Node at Index 1 with value 4 :");
+        myLinkedList.set(1, 4);
+        System.out.println("Print list with new value added using set method");
+        myLinkedList.printList();
 
 
     }
