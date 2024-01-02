@@ -65,6 +65,15 @@ public class Main {
 
         System.out.println("\nLinked List:");
         myLinkedList.printList();
+
+        // prepend
+        System.out.println("\n***********");
+        System.out.println("Use prepend method on the list");
+        System.out.println("Prepend 22 to the start of the list. ");
+
+        myLinkedList.prepend(22);
+        System.out.println("\nLinked List:");
+        myLinkedList.printList();
     }
 
 }
