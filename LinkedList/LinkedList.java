@@ -5,6 +5,7 @@ public class LinkedList {
     private Node tail;
     private int length;
 
+    // nested class
     class Node {
         int value;
         Node next;
@@ -96,4 +97,32 @@ public class LinkedList {
         length++;
 
     }
+
+    public Node removeFirst() {
+        if(length == 0) return null;
+        Node temp = head;
+        head = head.next;
+        temp.next = null;
+        length--;
+        if(length == 0){
+            tail = null;
+        }
+        return temp;
+    }
+
+
+    public Node get(int index){
+        if(index < 0 || index >= length) return null;
+        Node temp = head;
+        for(int i=0; i < index; i++){
+            temp = temp.next;
+        }
+        return temp;
+    }
+
+    public boolean set(int index, int value){
+
+    }
+
+
 }

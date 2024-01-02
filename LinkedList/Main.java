@@ -74,6 +74,27 @@ public class Main {
         myLinkedList.prepend(22);
         System.out.println("\nLinked List:");
         myLinkedList.printList();
+
+
+        // removeFirst
+        System.out.println("\n***********");
+        System.out.println("removefirst used to remove the newly added value 22 from the first position");
+
+        myLinkedList.removeFirst();
+        System.out.println("\nLinked List after first entry is removed:");
+        myLinkedList.printList();
+
+        // get
+        System.out.println("\n***********");
+        System.out.println("get used to return a Node at a given index");
+
+        System.out.println("\nLinked List as it stands currently:");
+        myLinkedList.printList();
+        System.out.println("\nFind Node at Index 2 : " + myLinkedList.get(1).value + "\n");
+        myLinkedList.printList();
+
+
+
     }
 
 }
