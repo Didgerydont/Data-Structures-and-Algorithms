@@ -126,6 +126,17 @@ public class Main {
         System.out.println("Print list after index 1 has been deleted using remove method");
         myLinkedList.printList();
 
+
+        // Reverse
+        System.out.println("\n***********");
+        System.out.println("Reverse used to reverse the order of the given linked list");
+
+        System.out.println("\nLinked List as it stands currently:");
+        myLinkedList.printList();
+        System.out.println("Reverse the list:");
+        myLinkedList.reverse();
+        System.out.println("Print the reversed list");
+        myLinkedList.printList();
     }
 
 }
