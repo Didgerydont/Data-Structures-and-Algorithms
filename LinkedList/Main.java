@@ -115,6 +115,17 @@ public class Main {
         System.out.println("Print list with new value added using insert method");
         myLinkedList.printList();
 
+        // remove
+        System.out.println("\n***********");
+        System.out.println("Remove used to removed a Node at a given index. It takes one argument, the index of the node to be removed");
+
+        System.out.println("\nLinked List as it stands currently:");
+        myLinkedList.printList();
+        System.out.println("Remove the Node at Index 1 with value 666 :");
+        myLinkedList.remove(1);
+        System.out.println("Print list after index 1 has been deleted using remove method");
+        myLinkedList.printList();
+
     }
 
 }
