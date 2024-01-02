@@ -101,9 +101,19 @@ public class Main {
         myLinkedList.printList();
         System.out.println("Set the Node at Index 1 with value 4 :");
         myLinkedList.set(1, 4);
-        System.out.println("Print list with new value added using set method");
+        System.out.println("Print list with new value updated using set method");
         myLinkedList.printList();
 
+        // insert
+        System.out.println("\n***********");
+        System.out.println("Insert used to insert a Node at a given index. It takes two arguments, the first is index, the second is value");
+
+        System.out.println("\nLinked List as it stands currently:");
+        myLinkedList.printList();
+        System.out.println("Insert the Node at Index 1 with value 666 :");
+        myLinkedList.insert(1, 666);
+        System.out.println("Print list with new value added using insert method");
+        myLinkedList.printList();
 
     }
 
