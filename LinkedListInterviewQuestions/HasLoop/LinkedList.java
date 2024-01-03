@@ -77,12 +77,23 @@ public class LinkedList {
         length++;
     }
 
-    // WRITE HASLOOP METHOD HERE //
-    //                           //
-    //                           //
-    //                           //
-    //                           //
-    ///////////////////////////////
+    // Use tortoise and hare algorithim to find if the linkedList has a loop.
+    public boolean hasLoop(){
+        Node slow = head;
+        Node fast = head;
+
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+            // Check if the two pointers meet, indicating a loop
+            if(fast == slow) return true;
+        }
+
+        // If fast reaches the end (null), there is no loop
+        return false;
+
+
+    }
 
 }
 
